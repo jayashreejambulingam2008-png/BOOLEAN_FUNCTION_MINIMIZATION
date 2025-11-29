@@ -14,10 +14,6 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
 
-**Theory**
-
-**Logic Diagram**
-
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -34,17 +30,38 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+(i) module DEexp2n(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
 
-Developed by: RegisterNumber:*/
-
-
-**RTL realization**
-
-**Output:**
+(ii) module DEexp2new2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
+```
+Developed by: JAYASHREE J RegisterNumber: 25014460*/
 
 **RTL**
 
-**Timing Diagram**
+
+(i)
+<img width="1600" height="893" alt="image" src="https://github.com/user-attachments/assets/371f5e0a-1fd5-4a47-9d6b-53cd870538c9" />
+
+(ii)
+<img width="1600" height="904" alt="image" src="https://github.com/user-attachments/assets/85571b3f-9c68-45c6-896d-c29f3e7bb334" />
+
+**Output**
+
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/308c9701-2185-44dc-9fba-6dd7f7ce2a65" />
+
+
+<img width="1600" height="901" alt="image" src="https://github.com/user-attachments/assets/f77dab9e-cce5-453a-bb6e-b35625a34134" />
+
 
 **Result:**
 
